@@ -2,10 +2,13 @@ package guru.springframework.controllers;
 
 import guru.springframework.services.GreetingService;
 import guru.springframework.services.GreetingServiceImpl;
+import org.springframework.stereotype.Controller;
 
 /**
  * Created by jt on 5/24/17.
  */
+@Controller
+//Constructor-based controllers are autowired from Spring 4.2
 public class ConstructorInjectedController {
 
     private GreetingService greetingService;
